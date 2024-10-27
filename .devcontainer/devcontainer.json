@@ -73,9 +73,9 @@
       "scss.lint.unknownAtRules": "ignore",
       "editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'",
       "editor.inlayHints.enabled": "off",
-      // "editor.cursorBlinking": "smooth",
-      // "editor.cursorStyle": "block",
-      // "editor.cursorSmoothCaretAnimation": "on",
+      "editor.cursorBlinking": "smooth",
+      "editor.cursorStyle": "block",
+      "editor.cursorSmoothCaretAnimation": "on",
       "window.nativeTabs": true,
       "codeium.aggressiveShutdown": true,
       "eslint.validate": ["typescript", "javascript", "vue"],
@@ -104,9 +104,6 @@
       "security.workspace.trust.untrustedFiles": "open",
       "firedbg.showWelcome": false,
       "svelte.enable-ts-plugin": true,
-      "yaml.schemas": {
-        "file:///Users/sefunmi/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-      },
       "git.openRepositoryInParentFolders": "always",
       "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
