@@ -59,14 +59,14 @@ EXPOSE 7860
 EXPOSE 8000
 EXPOSE 5173
 
+RUN chown -R sefunmi:sefunmi /home/sefunmi
+
 # Switch to the postgres user to initialize the database
 USER postgres
 
 # Initialize the database
 RUN service postgresql start && \
-    psql --command "ALTER USER postgres WITH PASSWORD 'password';" && \
-    chown -R sefunmi:sefunmi /home/sefunmi && \
-    chown -R sefunmi:sefunmi /root
+    psql --command "ALTER USER postgres WITH PASSWORD 'password';"
 
 USER sefunmi
 
