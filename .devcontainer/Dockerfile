@@ -26,7 +26,6 @@ RUN apt-get update && \
     unzip \
     curl \
     systemd \
-    sudo \
     postgresql \
     postgresql-client \
     postgresql-contrib \
