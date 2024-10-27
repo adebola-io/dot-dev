@@ -4,6 +4,7 @@ FROM ubuntu:22.04
 # Create a new privileged user.
 RUN useradd -m -u 1000 sefunmi && \
     usermod -aG sudo sefunmi && \
+    echo "root:password" | chpasswd && \
     echo "sefunmi ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 
@@ -14,7 +15,7 @@ USER root
 
 # Set environment variables
 ENV HOME=/home/sefunmi \
-    PATH=/home/sefunmi/.local/bin:$PATH \
+    PATH=/home/sefunmi/.local/bin:/home/sefunmi/.deno/bin:$PATH \
     DEBIAN_FRONTEND=noninteractive \
     PATH="/usr/lib/postgresql/14/bin:${PATH}" \
     PGDATA=/var/lib/postgresql/data
@@ -25,6 +26,7 @@ RUN apt-get update && \
     npm \
     unzip \
     curl \
+    git \
     systemd \
     postgresql \
     postgresql-client \
@@ -62,7 +64,9 @@ USER postgres
 
 # Initialize the database
 RUN service postgresql start && \
-    psql --command "ALTER USER postgres WITH PASSWORD 'password';"
+    psql --command "ALTER USER postgres WITH PASSWORD 'password';" && \
+    chown -R sefunmi:sefunmi /home/sefunmi && \
+    chown -R sefunmi:sefunmi /root
 
 USER sefunmi
 

@@ -452,9 +452,9 @@
         "docker-desktop"
       ],
       "terminal.integrated.gpuAcceleration": "off",
-      "terminal.integrated.localEchoLatencyThreshold": -1,
-      "terminal.integrated.localEchoEnabled": "off",
-      "workbench.colorTheme": "Dark Modern",
+      "terminal.integrated.localEchoLatencyThreshold": 0,
+      "terminal.integrated.localEchoEnabled": "on",
+      "workbench.colorTheme": "Houston",
       "supermaven.enableFixWithSupermaven": true,
       "workbench.startupEditor": "welcomePage",
       "editor.fontSize": 12
