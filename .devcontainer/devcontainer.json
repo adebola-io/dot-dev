@@ -6,7 +6,7 @@
   },
   "privileged": true,
   "forwardPorts": [3000, 5173, 4177, 5174, 5229],
-  "workspaceFolder": "/home/sefunmi",
+  "workspaceFolder": "/home/sefunmi/projects",
   "customizations": {
     "vscode": {
       "extensions": [

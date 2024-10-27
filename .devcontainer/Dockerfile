@@ -65,3 +65,5 @@ RUN service postgresql start && \
     psql --command "ALTER USER postgres WITH PASSWORD 'password';"
 
 USER sefunmi
+
+RUN mkdir -p /home/sefunmi/projects
