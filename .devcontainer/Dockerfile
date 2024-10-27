@@ -53,14 +53,9 @@ RUN apt-get update && \
     npm install -g --unsafe-perm localtunnel yarn pnpm spa-http-server ngrok eslint 
 
 
-RUN chown -R sefunmi:sefunmi /home/sefunmi
-
 EXPOSE 7860
 EXPOSE 8000
 EXPOSE 5173
-
-# Set permissions for necessary directories
-RUN chown -R sefunmi:sefunmi /root
 
 # Switch to the postgres user to initialize the database
 USER postgres
