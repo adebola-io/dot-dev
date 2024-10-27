@@ -1,7 +1,7 @@
 {
   "name": "Sefunmi's Container",
   "build": {
-    "dockerfile": "./devcontainer/Dockerfile",
+    "dockerfile": "./Dockerfile",
     "context": ".."
   },
   "workspaceFolder": "/home/sefunmi",
