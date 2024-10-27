@@ -1,9 +1,11 @@
 {
-  "name": "Sefunmi's Container",
+  "name": "Sefunmi's Corner",
   "build": {
     "dockerfile": "./Dockerfile",
     "context": ".."
   },
+  "privileged": true,
+  "forwardPorts": [3000, 5173, 4177, 5174, 5229],
   "workspaceFolder": "/home/sefunmi",
   "customizations": {
     "vscode": {
