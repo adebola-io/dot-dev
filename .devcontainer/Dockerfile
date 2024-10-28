@@ -5,11 +5,9 @@ FROM ubuntu:22.04
 RUN useradd -m -u 1000 sefunmi && \
     usermod -aG sudo sefunmi && \
     echo "root:password" | chpasswd && \
-    echo "sefunmi ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
-
-
-# Set permissions for necessary directories
-RUN chown -R sefunmi:sefunmi /home
+    echo "sefunmi ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && \
+    # Set permissions for necessary directories
+    chown -R sefunmi:sefunmi /home
 
 USER root
 
@@ -55,9 +53,7 @@ RUN apt-get update && \
     npm install -g --unsafe-perm localtunnel yarn pnpm spa-http-server ngrok eslint 
 
 
-EXPOSE 7860
-EXPOSE 8000
-EXPOSE 5173
+EXPOSE 7860 3000 8000 8080 5173 4177 5147 5229
 
 RUN chown -R sefunmi:sefunmi /home/sefunmi
 
