@@ -5,7 +5,7 @@
     "context": ".."
   },
   "privileged": true,
-  "forwardPorts": [3000, 5173, 4177, 5174, 5229],
+  "forwardPorts": [3000, 5173, 4177, 5174, 5229, 8000, 5500],
   "workspaceFolder": "/home/sefunmi/projects",
   "customizations": {
     "vscode": {
@@ -39,7 +39,9 @@
         "ms-azuretools.vscode-docker",
         "ms-ossdata.vscode-postgresql",
         "muhammad-sammy.rider-theme",
+        "Nuxtr.nuxtr-vscode",
         "rangav.vscode-thunder-client",
+        "ritwickdey.LiveServer",
         "rust-lang.rust-analyzer",
         "sourcegraph.cody-ai",
         "streetsidesoftware.code-spell-checker",
