@@ -4,7 +4,6 @@
     pkgs.redis
     pkgs.postgresql
     pkgs.bun
-    pkgs.yarn
     pkgs.gh
     pkgs.go
     pkgs.nodejs_latest
@@ -67,5 +66,13 @@
     docker = {
       enable = true;
     };
+    redis = {
+      enable = true;
+    };
+  };
+  idx.workspace.onCreate = {
+    npm-install-globals = "npm install -g --unsafe-perm localtunnel yarn pnpm spa-http-server ngrok eslint";
+    # files to open when the workspace is first opened.
+    default.openFiles = [ "README.md" ];
   };
 }
