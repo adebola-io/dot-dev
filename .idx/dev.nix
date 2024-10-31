@@ -14,6 +14,8 @@
     pkgs.zsh
     pkgs.python3
     pkgs.deno
+    pkgs.rustc
+    pkgs.rustup
   ];
   idx.extensions = [
     "Continue.continue"
@@ -58,7 +60,6 @@
     "wheredoesyourmindgo.gruvbox-concoctis"
     "yoavbls.pretty-ts-errors"
   ];
-
   services = {
     postgres = {
       enable = true;
