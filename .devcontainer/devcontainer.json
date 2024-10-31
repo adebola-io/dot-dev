@@ -291,7 +291,7 @@
       "terminal.integrated.tabs.location": "right",
       "terminal.integrated.fontSize": 12,
       "cody.autocomplete.enabled": false,
-      "editor.fontFamily": "Geist Mono",
+      "editor.fontFamily": "Jetbrains Mono NL",
       "terminal.integrated.rendererType": "dom",
       "remote.SSH.remotePlatform": {
         "*.gitpod.io": "linux"
