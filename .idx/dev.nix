@@ -72,6 +72,7 @@
   };
   idx.workspace.onCreate = {
     npm-install-globals = "npm install -g --unsafe-perm localtunnel yarn pnpm spa-http-server ngrok eslint";
+    create-executables = "chmod +x ./.vscode/start_tunnel.sh";
     # files to open when the workspace is first opened.
     default.openFiles = [ "README.md" ];
   };
