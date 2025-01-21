@@ -17,7 +17,6 @@
     pkgs.rustup
   ];
   idx.extensions = [
-    "Continue.continue"
     "DavidAnson.vscode-markdownlint"
     "GitHub.vscode-pull-request-github"
     "PKief.material-icon-theme"
